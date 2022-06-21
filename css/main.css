@@ -1965,4 +1965,27 @@ footer .copyright .block {
 		border-right-width: 0;
 	}
 }
+.btn-sound {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 35px;
+    height: 35px;
+    z-index: 2000;
+}
+.btn1 {
+    outline: 0;
+    border: none;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+	
+}
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,6 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico%7CWork+Sans:400,300,600,400italic,700%7CAmatic+SC:400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>	
 	<!-- Animate.css -->
@@ -513,7 +512,7 @@
 											<figure>
 												<img src="img/huyvan.jpg" alt="user">
 											</figure>
-											<span>Thichmoongto.98</span>
+											<span>Văn Huy</span>
 											<blockquote>
 												<p>"Chúc 2 bạn có một tình yêu bền chặt, luôn gắn bó với nhau để xây dựng tổ ấm riêng của mình"</p>
 											</blockquote>
@@ -551,7 +550,7 @@
 		            <div class="col-md-12 text-center">
 		                <p>
 		                    <small class="block">&copy; 2022 Ngày thành hôn. </small>
-		                    <small class="block">Được tạo bởi <a href="https://www.facebook.com/thichmoongto.98/" target="_blank">TMMT</a></small>
+		                    <small class="block">Được tạo bởi <a href="https://www.facebook.com/thichmoongto.98/" target="_blank">THICHMOONGTO.98</a></small>
 		                </p>
 		                <ul class="social-icons">
 		                    <li><a href="https://www.facebook.com/thichmoongto.98/"><i class="fa fa-twitter"></i></a></li>
@@ -563,7 +562,22 @@
 		        </div>
 		    </div>
 		</section>
+		<button onclick="offMp3()" type="button" class="btn1 btn-default btn-sound"><i class="fa fa-music" aria-hidden="true"></i></button>
+		<input type="hidden" value="1" id="myStatus">
+		<audio id="myAudio" controls autoplay style="display: none;">
+			<source src="img/roitoiluon.mp3" type="audio/ogg">
+			<source src="img/roitoiluon.mp3" type="audio/mpeg">
+		</audio>
 	</div>
+	<script>
+		function offMp3() {
+			var valueIput = document.getElementById("myStatus").value;
+			var x = document.getElementById("myAudio");
+			valueIput == '1' ? valueIput = '0' : valueIput = '1'
+			valueIput == '1' ? x.play() : x.pause();
+			document.getElementById("myStatus").value = valueIput;
+		}
+	</script>
 	<!-- Modernizr JS -->
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
