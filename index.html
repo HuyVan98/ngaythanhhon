@@ -573,9 +573,10 @@
 		function offMp3() {
 			var valueIput = document.getElementById("myStatus").value;
 			var x = document.getElementById("myAudio");
-			valueIput == '1' ? valueIput = '0' : valueIput = '1'
-			valueIput == '1' ? x.play() : x.pause();
-			document.getElementById("myStatus").value = valueIput;
+			x.play()
+			// valueIput == '1' ? valueIput = '0' : valueIput = '1'
+			// valueIput == '1' ? x.play() : x.pause();
+			// document.getElementById("myStatus").value = valueIput;
 		}
 	</script>
 	<!-- Modernizr JS -->
